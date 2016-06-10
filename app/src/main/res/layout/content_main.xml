@@ -13,7 +13,7 @@
     tools:context="com.maza.oursolarsystem.MainActivity"
     tools:showIn="@layout/activity_main"
     android:gravity="center_horizontal"
-    android:background="#040404">
+    android:background="@drawable/mainblnd">
 
     <ViewFlipper
         android:id="@+id/view_flipper"
@@ -45,7 +45,7 @@
                         android:layout_height="140dp"
                         android:id="@+id/sunButton"
                         android:scaleType="fitXY"
-                        android:src="@drawable/tulip1"
+                        android:src="@drawable/sun"
                         android:layout_margin="5dp"/>
 
                     <ImageButton
@@ -71,7 +71,7 @@
                         android:layout_height="140dp"
                         android:id="@+id/venuButton"
                         android:scaleType="fitXY"
-                        android:src="@drawable/tulip1"
+                        android:src="@drawable/venus"
                         android:layout_margin="5dp"/>
 
                     <ImageButton
@@ -79,7 +79,7 @@
                         android:layout_height="140dp"
                         android:id="@+id/earthButton"
                         android:scaleType="fitXY"
-                        android:src="@drawable/tulip1"
+                        android:src="@drawable/earth"
                         android:layout_margin="5dp"/>
 
                 </LinearLayout>
@@ -94,7 +94,7 @@
                         android:layout_height="140dp"
                         android:id="@+id/marsButton"
                         android:scaleType="fitXY"
-                        android:src="@drawable/tulip1"
+                        android:src="@drawable/mars"
                         android:layout_margin="5dp"/>
 
                     <ImageButton
@@ -148,7 +148,7 @@
                         android:scaleType="fitXY"
                         android:id="@+id/jupButton"
                         android:layout_margin="5dp"
-                        android:src="@drawable/tulip1"/>
+                        android:src="@drawable/jupiter"/>
 
                     <ImageButton
                         android:layout_width="140dp"
@@ -156,7 +156,7 @@
                         android:id="@+id/satButton"
                         android:scaleType="fitXY"
                         android:layout_margin="5dp"
-                        android:src="@drawable/tulip1"/>
+                        android:src="@drawable/saturn"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -171,7 +171,7 @@
                         android:scaleType="fitXY"
                         android:layout_margin="5dp"
                         android:id="@+id/uraButton"
-                        android:src="@drawable/tulip1"/>
+                        android:src="@drawable/uranus"/>
 
                     <ImageButton
                         android:layout_width="140dp"
@@ -179,7 +179,7 @@
                         android:scaleType="fitXY"
                         android:layout_margin="5dp"
                         android:id="@+id/nepButton"
-                        android:src="@drawable/tulip1"/>
+                        android:src="@drawable/neptune"/>
                 </LinearLayout>
                 <LinearLayout
                     android:orientation="horizontal"

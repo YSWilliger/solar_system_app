@@ -78,7 +78,7 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener {
         try {
 
             if (points == 20) {
-                questionText.setText("You win!\n Play again?");
+                questionText.setText("You won!\n Play again?");
                 mp3.start();
             } else {
 
@@ -105,12 +105,12 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener {
 
                     } else {
                         incorrectAnswerLocation = random.nextInt(planet_answers.length);
-                        incorrectAns = planet_answers[incorrectAnswerLocation].toString();
+                        incorrectAns = planet_answers[incorrectAnswerLocation];
 
                         while ((correctAnsString.equals(incorrectAns)) ||
                                 (answers.contains(incorrectAns))) {
                             incorrectAnswerLocation = random.nextInt(planet_answers.length);
-                            incorrectAns = planet_answers[incorrectAnswerLocation].toString();
+                            incorrectAns = planet_answers[incorrectAnswerLocation];
                         }
                         answers.add(i, incorrectAns);
                         Log.i("annswers arraylist", answers.get(i));
@@ -141,7 +141,7 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener {
         if ((Integer.parseInt(tag)) == locationOfCorrectAnswer) {
             mp2.start();
             points++;
-            pointsText.setText(Integer.toString(points) + "/20");
+            pointsText.setText(Integer.toString(points) + getString(R.string.numQuestions));
 
             if (points == 20) {
                 endGame();
@@ -172,7 +172,7 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener {
         button3.setVisibility(View.VISIBLE);
         pointsText.setVisibility(View.VISIBLE);
         points = 0;
-        pointsText.setText(Integer.toString(points) + "/20");
+        pointsText.setText(Integer.toString(points) + getString(R.string.numQuestions));
         questionText.setText("");
         backPLDataButton.setVisibility(View.INVISIBLE);
         quizAgainButton.setVisibility(View.INVISIBLE);

@@ -61,6 +61,7 @@ As a result of the geology on Earth, the surface of the Earth has far fewer impa
 Mars is named for the Roman god of war. The Greeks called the planet Ares, after their own god of war. The Romans and Greeks both associated the planet with warfare because its color resembles the color of blood.\n\n
 Mars has two small moons. Their names are Phobos and Deimos. They are named for the sons of Ares. Phobos means “fear,” and Deimos means “flight.”\n\n
 Mar\’s surface is rocky, with canyons, volcanoes, dry lake beds and craters all over it. Red dust covers most of its surface.\n\n
+The highest mountain and volcano in the Solar System is on the planet Mars. It is called Olympus Mons and is 16 miles (24 kilometers) high which makes it about three times higher than Mt. Everest.\n\n
 Mars has a day that is almost the same as Eath\’s: 24 hours and 40 minutes. However, it takes almost twice as long to orbit the Sun: 687 days, a Martian year.
 Mars has a very thin atmosphere, one that is about 100 times less dense than the one on Earth. The Martian atmosphere contains more than 95 percent carbon dioxide, approximately 3 percent nitrogen, and much less than 1 percent oxygen. \n\n
 With its atmosphere, Mars has clouds and wind just like Earth. Sometimes the wind blows the red dust of Mars into a dust storm. Tiny dust storms can look like tornados and large ones can be seen from Earth. Mars\’ large storms sometimes cover the whole planet!\n\n
@@ -76,31 +77,31 @@ The total mass of the asteroid belt approximately 4% that of the Earth\’s moon
 <item>
 Jupiter is the largest planet in the solar system. Jupiter is so large that all of the other planets in the solar system could fit inside it. More than 1,000 Earths would fit inside Jupiter.\n
 \n
-Jupiter is the fifth planet from the sun. When viewed from Earth, it is usually the second brightest planet in the sky, after Venus. The planet is named after Jupiter, the king of the Roman gods.\n\n-
+Jupiter is the fifth planet from the sun. When viewed from Earth, it is usually the second brightest planet in the sky, after Venus. The planet is named after Jupiter, the king of the Roman gods.\n\n
 Jupiter is a giant gas planet. If Jupiter had been about 80 times more massive, it would have become a star rather than a planet. Its atmosphere is made up of mostly hydrogen gas and helium gas, just like the sun. The planet is covered in thick red, brown, yellow, and white clouds.\n
 \n
 One of the most famous features of Jupiter is the Great Red Spot. This is a giant spinning storm, resembling a hurricane. At its widest point, the storm is about three and a half times the diameter of Earth. Jupiter is a very windy planet. Winds on Jupiter can reach 400 mph!\n
 \n
-Jupiter has three thin rings. These rings are made up mostly of tiny dust particles.\n
+Jupiter has four faint rings. These rings are made up mostly of tiny dust particles.\n
 \n
 Jupiter rotates, or spins, faster than any other planet. The day on Jupiter is only about 10 hours long. The planet orbit is elliptical, or oval-shaped. It takes just under 12 Earth years for Jupiter to make one revolution around the sun, a Jupiter year..\n
 \n
 Jupiter has 62 known moons. The four largest moons are Io, Europa, Ganymede, and Callisto.
 \n\n
 </item>
-    <item>Saturn is the sixth planet in the solar system. Saturn is the last planet that can be seen without using a telescope or binoculars and the planet was known in
-        the ancient world before telescopes were invented. However, the rings of Saturn
-        can only be seen using a telescope. \n\n
-Saturn has at least 18 moons. The largest of the moons, Titan, is the second largest
-        in the Solar system, after Jupiter\’s moon, Ganymede.  \n\n
-Saturn is the second largest planet in the Solar System, after the giant Jupiter.
-        Its mass is 95 times that of the Earth. \n\n
+    <item>
+Saturn is the sixth planet in the solar system. Saturn is the last planet that can be seen without using a telescope or binoculars and the planet was known in the ancient world before telescopes were invented. However, the rings of Saturn can only be seen using a telescope. \n\n
+Although Jupiter, Saturn, Uranus, and Neptune&#8212;the “outer” solar system planets&#8212;all have some rings, the rings of Saturn are the most extensive of any planet in the Solar System.  They are made up of trillions of particles of rock, dust and ice which all orbit the planet.
+\n\n
+Saturn has at least 18 moons. The largest of the moons, Titan, is the second largest in the Solar system, after Jupiter\’s moon, Ganymede.  \n\n
+Saturn is the second largest planet in the Solar System, after the giant Jupiter. Its mass is 95 times that of the Earth. \n\n
 Saturn takes 29 and one-half years to make one complete orbit of the Sun, a Saturn year. \n\n
-Like Jupiter, Saturn spins much faster on its axis than the Earth. Saturn, although
-        so much bigger, completes a rotation in just over 10 hours, a Saturn day. \n\n</item>
-<item>Uranus is the third largest planet in our Solar System. Sixty-four Earths would fit inside it. Despite its size,
-    it spins rapidly. Like Venus, Uranus spins in the opposite direction of Earth--clockwise
-    east to west--so on Uranus, the sun rises in the west rather than the east.
+Like Jupiter, Saturn spins much faster on its axis than the Earth. Saturn, although so much bigger, completes a rotation in just over 10 hours, a Saturn day. \n\n
+    </item>
+<item>
+Uranus is the seventh planet, and lies more than 2,800 million kilometers from the Sun. Each orbit around the Sun lasts 84 Earth years, a Uranus year. However, a day on Uranus is just over seventeen hours long. \n\n
+Uranus has 13 known rings, both bright and dark. Like the rings of Saturn, some are made up of black dust and very large rocks. \n\n
+Uranus is the third largest planet in our Solar System. Sixty-four Earths would fit inside it. Despite its size, it spins rapidly. Like Venus, Uranus spins in the opposite direction of Earth&#8212;clockwise east to west&#8212;so on Uranus, the sun rises in the west rather than the east.
 \n\n
 Uranus spins like a top knocked over on its side. This means that the Sun is sometimes directly overhead at the poles. Each pole has a summer and a winter lasting 21 years, making them both the hottest and coldest places on the planet! \n\n
 Uranus has 27 known moons. None of these are very big. The largest satellites are Oberon and Titania, which were named after characters in Shakespeare\’s play, A Midsummer Night\'s Dream. \n\n
@@ -125,6 +126,10 @@ When discovered, Eris, named after the Greek goddess of chaos, was found to be t
         </string-array>
 
         <string-array name="planet_answers">
+            <item>VENUS</item>
+            <item>EARTH</item>
+            <item>SATURN</item>
+            <item>SATURN</item>
             <item>MERCURY</item>
             <item>THE SUN</item>
             <item>VENUS</item>
@@ -148,7 +153,6 @@ When discovered, Eris, named after the Greek goddess of chaos, was found to be t
             <item>JUPITER</item>
             <item>MARS</item>
             <item>JUPITER</item>
-            <item>URANUS</item>
             <item>NEPTUNE</item>
             <item>THE SUN</item>
             <item>MERCURY</item>
@@ -160,10 +164,15 @@ When discovered, Eris, named after the Greek goddess of chaos, was found to be t
             <item>KUIPER BELT</item>
             <item>VENUS</item>
             <item>EARTH</item>
+            <item>MARS</item>
         </string-array>
 
 
         <string-array name="planet_questions">
+            <item>Which planet is second from the Sun?</item>
+            <item>Which planet is third from the Sun?</item>
+            <item>Which planet is sixth from the Sun?</item>
+            <item>Which planet has the largest system of rings around it?</item>
             <item>Which planet is closest to the Sun?</item>
             <item>What is the name of the star that gives life to the Earth?</item>
             <item>Which planet was named for Roman goddess of love and beauty?</item>
@@ -187,7 +196,6 @@ When discovered, Eris, named after the Greek goddess of chaos, was found to be t
             <item>Which planet is fifth from the sun?</item>
             <item>Which planet has a moon whose name means "fear"?</item>
             <item>Which of these is the largest planet in the solar system?</item>
-            <item>Which planet is  the third largest planet in our solar system?</item>
             <item>Which planet has a moon named Triton?</item>
             <item>Everything in the solar system orbits around which of these?</item>
             <item>Which is the smallest (non-dwarf) planet in the Solar System?</item>
@@ -199,6 +207,7 @@ When discovered, Eris, named after the Greek goddess of chaos, was found to be t
             <item>Which of these is an icy region beyond Neptune?</item>
             <item>Which planet is the hottest in the solar system?</item>
             <item>Which is the largest of the "inner" solar system planets?</item>
+            <item>Which planet has the highest mountain in the solar system?</item>
         </string-array>
 
     </resources>

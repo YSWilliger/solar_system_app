@@ -24,15 +24,16 @@
 
         <LinearLayout
             android:orientation="vertical"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginLeft="20dp"
-            android:layout_marginRight="40dp">
+            android:layout_marginRight="40dp"
+            android:layout_weight="1">
 
             <Button
-                android:layout_width="175dp"
-                android:layout_height="175dp"
+                android:layout_width="250dp"
+                android:layout_height="115dp"
                 android:text="Next Planet"
                 android:layout_margin="10dp"
                 android:id="@+id/nextPlButton"
@@ -40,15 +41,15 @@
                 android:onClick="displayNextPlanet"
                 android:layout_weight="1"
                 android:textAlignment="center"
-                android:textSize="30sp"
+                android:textSize="28sp"
                 android:textStyle="bold"
                 android:background="#8fc4c0"
                 android:layout_marginTop="10dp"
-                android:padding="10dp"/>
+                android:padding="5dp"/>
 
             <Button
-                android:layout_width="175dp"
-                android:layout_height="175dp"
+                android:layout_width="250dp"
+                android:layout_height="115dp"
                 android:text="Quiz Me!"
                 android:id="@+id/quizButton"
                 android:layout_margin="10dp"
@@ -56,27 +57,26 @@
                 android:onClick="gotoQuiz"
                 android:layout_gravity="center"
                 android:textStyle="bold"
-                android:textSize="30sp"
+                android:textSize="28sp"
                 android:textAlignment="center"
                 android:background="#8fc4c0"
-                android:padding="10dp"/>
+                android:padding="5dp"/>
 
         </LinearLayout>
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="280dp"
             android:layout_height="wrap_content"
             android:id="@+id/plData"
-            android:layout_weight="1"
 
             android:textColor="#eafad4"
             android:textSize="35sp"
             android:layout_gravity="center_vertical"
             android:textAlignment="center"
-            android:layout_marginLeft="50dp"
-            android:layout_marginRight="50dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="30dp"/>
+            android:background="#99050505"
+            android:padding="10dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1"/>
     </LinearLayout>
 </RelativeLayout>
 

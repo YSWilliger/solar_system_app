@@ -24,7 +24,8 @@
         android:textSize="40sp"
         android:textColor="#eafad4"
         android:textAlignment="center"
-        android:text="0/20"/>
+        android:text="0/20"
+        android:layout_marginRight="10dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"

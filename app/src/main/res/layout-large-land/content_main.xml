@@ -13,7 +13,7 @@
     tools:context="com.maza.oursolarsystem.MainActivity"
     tools:showIn="@layout/activity_main"
     android:gravity="center_vertical"
-    android:background="@drawable/mainblnd">
+    android:background="@drawable/starsbackground">
 
     <ViewFlipper
         android:id="@+id/view_flipper"
@@ -41,8 +41,8 @@
                     android:layout_height="wrap_content">
 
                     <ImageButton
-                        android:layout_width="300dp"
-                        android:layout_height="300dp"
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
                         android:id="@+id/sunButton"
                         android:scaleType="fitXY"
                         android:padding="10dp"
@@ -50,8 +50,8 @@
                         android:layout_margin="5dp"/>
 
                     <ImageButton
-                        android:layout_width="300dp"
-                        android:layout_height="300dp"
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
                         android:scaleType="fitXY"
                         android:id="@+id/mercButton"
                         android:padding="10dp"
@@ -59,8 +59,8 @@
                         android:layout_margin="5dp"/>
 
                     <ImageButton
-                        android:layout_width="300dp"
-                        android:layout_height="300dp"
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
                         android:scaleType="fitXY"
                         android:padding="10dp"
                         android:id="@+id/venuButton"
@@ -74,8 +74,8 @@
                     android:layout_height="wrap_content">
 
                     <ImageButton
-                        android:layout_width="300dp"
-                        android:layout_height="300dp"
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
                         android:id="@+id/earthButton"
                         android:scaleType="fitXY"
                         android:padding="10dp"
@@ -83,8 +83,8 @@
                         android:layout_margin="5dp"/>
 
                     <ImageButton
-                        android:layout_width="300dp"
-                        android:layout_height="300dp"
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
                         android:scaleType="fitXY"
                         android:id="@+id/marsButton"
                         android:padding="10dp"
@@ -92,20 +92,20 @@
                         android:layout_margin="5dp"/>
 
                     <ImageButton
-                        android:layout_width="300dp"
-                        android:layout_height="300dp"
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
                         android:scaleType="fitXY"
                         android:padding="10dp"
                         android:id="@+id/asterButton"
-                        android:src="@drawable/tulip1"
+                        android:src="@drawable/asteroid"
                         android:layout_margin="5dp"/>
 
                 </LinearLayout>
             </LinearLayout>
 
             <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:id="@+id/toRightButton"
                 android:scaleType="fitXY"
                 android:layout_margin="5dp"
@@ -124,8 +124,8 @@
             >
 
             <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:scaleType="fitXY"
                 android:padding="10dp"
                 android:layout_margin="5dp"
@@ -148,8 +148,8 @@
                     android:layout_height="wrap_content">
 
                     <ImageButton
-                        android:layout_width="300dp"
-                        android:layout_height="300dp"
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
                         android:id="@+id/jupButton"
                         android:layout_margin="5dp"
                         android:scaleType="fitXY"
@@ -157,8 +157,8 @@
                         android:src="@drawable/jupiter"/>
 
                     <ImageButton
-                        android:layout_width="300dp"
-                        android:layout_height="300dp"
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
                         android:scaleType="fitXY"
                         android:layout_margin="5dp"
                         android:padding="10dp"
@@ -166,8 +166,8 @@
                         android:src="@drawable/saturn"/>
 
                     <ImageButton
-                        android:layout_width="300dp"
-                        android:layout_height="300dp"
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
                         android:scaleType="fitXY"
                         android:layout_margin="5dp"
                         android:padding="10dp"
@@ -182,8 +182,8 @@
                     android:layout_height="wrap_content">
 
                     <ImageButton
-                        android:layout_width="300dp"
-                        android:layout_height="300dp"
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
                         android:layout_margin="5dp"
                         android:padding="10dp"
                         android:scaleType="fitXY"
@@ -191,13 +191,13 @@
                         android:src="@drawable/neptune"/>
 
                     <ImageButton
-                        android:layout_width="300dp"
-                        android:layout_height="300dp"
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
                         android:scaleType="fitXY"
                         android:padding="10dp"
                         android:layout_margin="5dp"
                         android:id="@+id/dwarfButton"
-                        android:src="@drawable/tulip1"/>
+                        android:src="@drawable/kuiper"/>
                 </LinearLayout>
 
             </LinearLayout>

@@ -12,7 +12,7 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.maza.oursolarsystem.Quiz"
     tools:showIn="@layout/activity_quiz"
-    android:background="@drawable/mainblnd">
+    android:background="@drawable/starsbackground">
 
     <TextView
         android:layout_width="100dp"
@@ -66,7 +66,8 @@
                 android:layout_marginRight="10dp"
                 android:textSize="15sp"
                 android:textStyle="bold"
-                android:onClick="quizAgain"/>
+                android:onClick="quizAgain"
+                android:padding="10dp"/>
 
             <Button
                 android:layout_width="wrap_content"
@@ -76,7 +77,8 @@
                 android:layout_marginLeft="10dp"
                 android:textSize="15sp"
                 android:textStyle="bold"
-                android:onClick="dataAgain"/>
+                android:onClick="dataAgain"
+                android:padding="10dp"/>
         </LinearLayout>
 
         <Button

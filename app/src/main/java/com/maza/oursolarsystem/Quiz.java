@@ -79,6 +79,7 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener {
 
             if (points == 20) {
                 questionText.setText("You win!\n Play again?");
+                mp3.start();
             } else {
 
                 //random number to choose correct answer from planey_answers array
@@ -171,7 +172,7 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener {
         button3.setVisibility(View.VISIBLE);
         pointsText.setVisibility(View.VISIBLE);
         points = 0;
-        pointsText.setText("0");
+        pointsText.setText(Integer.toString(points) + "/20");
         questionText.setText("");
         backPLDataButton.setVisibility(View.INVISIBLE);
         quizAgainButton.setVisibility(View.INVISIBLE);

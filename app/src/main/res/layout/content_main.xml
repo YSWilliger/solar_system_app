@@ -13,7 +13,7 @@
     tools:context="com.maza.oursolarsystem.MainActivity"
     tools:showIn="@layout/activity_main"
     android:gravity="center_horizontal"
-    android:background="@drawable/mainblnd">
+    android:background="@drawable/starsbackground">
 
     <ViewFlipper
         android:id="@+id/view_flipper"
@@ -102,7 +102,7 @@
                         android:layout_height="140dp"
                         android:id="@+id/asterButton"
                         android:scaleType="fitXY"
-                        android:src="@drawable/tulip1"
+                        android:src="@drawable/asteroid"
                         android:layout_margin="5dp"/>
 
                 </LinearLayout>
@@ -193,7 +193,7 @@
                         android:scaleType="fitXY"
                         android:layout_margin="5dp"
                         android:id="@+id/dwarfButton"
-                        android:src="@drawable/tulip1"/>
+                        android:src="@drawable/kuiper"/>
 
                 </LinearLayout>
 

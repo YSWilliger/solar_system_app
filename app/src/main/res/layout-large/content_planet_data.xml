@@ -16,35 +16,38 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true">
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="false"
+        android:gravity="center|center_vertical|center_horizontal"
+        android:layout_marginTop="50dp">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/plData"
             android:scrollIndicators="top"
-            android:maxLines = "15"
-            android:layout_gravity="center_horizontal"
+            android:maxLines = "18"
+            android:layout_gravity="center"
             android:textColor="#eafad4"
             android:textAlignment="center"
             android:textSize="37sp"
             android:background="#99050505"
             android:padding="10dp"
-            android:layout_margin="30dp"/>
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="75dp"/>
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:layout_marginBottom="30dp">
 
             <Button
                 android:layout_width="60dp"
-                android:layout_height="100dp"
+                android:layout_height="75dp"
                 android:text="Next Planet"
                 android:id="@+id/nextPlButton"
                 android:layout_gravity="center_horizontal|bottom"
@@ -60,7 +63,7 @@
 
             <Button
                 android:layout_width="60dp"
-                android:layout_height="100dp"
+                android:layout_height="75dp"
                 android:text="Quiz Me!"
                 android:id="@+id/quizButton"
                 android:layout_weight="1"

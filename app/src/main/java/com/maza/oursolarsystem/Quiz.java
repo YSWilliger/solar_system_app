@@ -1,13 +1,10 @@
 package com.maza.oursolarsystem;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -29,6 +26,7 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener {
     int incorrectAnswerLocation;
     TextView pointsText;
     int points;
+    int totalPossPoints = 20;
     String correctAnsString, incorrectAns;
 
 
@@ -37,6 +35,11 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
+
+        if(getResources().getBoolean(R.bool.landscape_only)){
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        }
+
 
         mp1 = MediaPlayer.create(getApplicationContext(), R.raw.buzzer);
         mp2 = MediaPlayer.create(getApplicationContext(), R.raw.bell);
@@ -77,7 +80,7 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener {
 
         try {
 
-            if (points == 20) {
+            if (points == totalPossPoints) {
                 questionText.setText("You won!\n Play again?");
                 mp3.start();
             } else {
@@ -93,7 +96,7 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener {
                 while (questions_asked.contains(chosenPlanetQ)) {
                     chosenPlanetQ = random.nextInt(planet_questions.length);
                 }
-                correctAnsString = planet_answers[chosenPlanetQ].toString();
+                correctAnsString = planet_answers[chosenPlanetQ];
 
                 for (int i = 0; i < 4; i++) {
 
@@ -101,7 +104,6 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener {
 
                         questionText.setText(planet_questions[chosenPlanetQ]);
                         answers.add(i, correctAnsString);
-                        Log.i("Correct Answer", correctAnsString);
 
                     } else {
                         incorrectAnswerLocation = random.nextInt(planet_answers.length);
@@ -113,7 +115,6 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener {
                             incorrectAns = planet_answers[incorrectAnswerLocation];
                         }
                         answers.add(i, incorrectAns);
-                        Log.i("annswers arraylist", answers.get(i));
 
                     }
                 }
@@ -143,7 +144,7 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener {
             points++;
             pointsText.setText(Integer.toString(points) + getString(R.string.numQuestions));
 
-            if (points == 20) {
+            if (points == totalPossPoints) {
                 endGame();
             }
         } else {
@@ -159,9 +160,9 @@ public class Quiz extends AppCompatActivity implements View.OnClickListener {
         button3.setVisibility(View.INVISIBLE);
         backPLDataButton.setVisibility(View.VISIBLE);
         pointsText.setVisibility(View.INVISIBLE);
-        backPLDataButton.setText("PLANET DATA");
+        backPLDataButton.setText(R.string.planetDataButton);
         quizAgainButton.setVisibility(View.VISIBLE);
-        quizAgainButton.setText("QUIZ ME AGAIN!");
+        quizAgainButton.setText(R.string.quizAgainButton);
         questions_asked.clear();
     }
 

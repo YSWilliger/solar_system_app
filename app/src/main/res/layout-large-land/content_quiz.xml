@@ -14,77 +14,94 @@
     tools:showIn="@layout/activity_quiz"
     android:background="@drawable/starsbackground">
 
-    <TextView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:id="@+id/pointsTextView"
-        android:layout_weight="0.21"
-        android:textStyle="bold"
-        android:textSize="40sp"
-        android:textColor="#eafad4"
-        android:textAlignment="center"
-        android:text="0/20"
-        android:layout_marginRight="10dp"/>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal">
 
-
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_gravity="center_vertical"
-            android:textAlignment="center">
+            android:textAlignment="center"
+            android:id="@+id/pointsQuesLayout">
 
             <TextView
-                android:layout_width="600dp"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/pointsTextView"
+                android:layout_weight="0.21"
+                android:textStyle="bold"
+                android:textSize="40sp"
+                android:textColor="#eafad4"
+                android:textAlignment="center"
+                android:text="0/20"
+                android:layout_marginRight="20dp"
+                android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="400dp"
                 android:layout_height="match_parent"
                 android:id="@+id/questionText"
                 android:textAlignment="center"
                 android:textStyle="bold|italic"
-                android:textSize="42sp"
+                android:textSize="35sp"
                 android:textColor="#eafad4"
-                android:layout_marginBottom="25dp"
-                android:layout_gravity="center"/>
+                android:layout_gravity="center_vertical"
+                android:padding="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="25dp"
+                android:background="#99050505"/>
 
             <LinearLayout
                 android:orientation="horizontal"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal"
-                android:layout_gravity="center_horizontal">
+                android:id="@+id/replayLayout">
 
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/quizAgainButton"
                     android:gravity="center_horizontal"
-                    android:layout_marginRight="10dp"
-                    android:textSize="35sp"
+                    android:textSize="28sp"
                     android:textStyle="bold"
                     android:onClick="quizAgain"
                     android:background="#8fc4c0"
-                    android:padding="20dp"/>
+                    android:padding="20dp"
+                    android:layout_margin="10dp"/>
 
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/backPlDataButton"
                     android:gravity="center_horizontal"
-                    android:layout_marginLeft="10dp"
-                    android:textSize="35sp"
+                    android:textSize="28sp"
                     android:textStyle="bold"
                     android:onClick="dataAgain"
                     android:background="#8fc4c0"
-                    android:padding="20dp"/>
+                    android:padding="20dp"
+                    android:layout_margin="10dp"/>
             </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_toRightOf="@+id/replayLayout"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:textAlignment="center"
+            android:id="@+id/ansButtonLayout">
 
             <Button
-                android:layout_width="400dp"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_row="1"
                 android:layout_column="0"
@@ -94,13 +111,13 @@
                 android:layout_gravity="center"
                 android:textAlignment="center"
                 android:textStyle="bold"
-                android:textSize="35sp"
+                android:textSize="25sp"
                 android:layout_marginTop="15dp"
                 android:background="#8fc4c0"
                 android:padding="15dp"/>
 
             <Button
-                android:layout_width="400dp"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_row="2"
                 android:layout_column="0"
@@ -110,13 +127,13 @@
                 android:layout_gravity="center"
                 android:textAlignment="center"
                 android:textStyle="bold"
-                android:textSize="35sp"
+                android:textSize="25sp"
                 android:layout_marginTop="15dp"
                 android:background="#8fc4c0"
                 android:padding="15dp"/>
 
             <Button
-                android:layout_width="400dp"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_row="3"
                 android:layout_column="0"
@@ -126,13 +143,13 @@
                 android:layout_gravity="center"
                 android:textAlignment="center"
                 android:textStyle="bold"
-                android:textSize="35sp"
+                android:textSize="25sp"
                 android:layout_marginTop="15dp"
                 android:background="#8fc4c0"
                 android:padding="15dp"/>
 
             <Button
-                android:layout_width="400dp"
+                android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_row="4"
                 android:layout_column="0"
@@ -142,7 +159,7 @@
                 android:layout_gravity="center"
                 android:textAlignment="center"
                 android:textStyle="bold"
-                android:textSize="35sp"
+                android:textSize="25sp"
                 android:layout_marginTop="15dp"
                 android:background="#8fc4c0"
                 android:padding="15dp"/>
@@ -150,7 +167,6 @@
         </LinearLayout>
 
     </LinearLayout>
-
 
 
 </RelativeLayout>

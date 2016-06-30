@@ -56,7 +56,8 @@
                         android:id="@+id/mercButton"
                         android:padding="10dp"
                         android:src="@drawable/mercury"
-                        android:layout_margin="5dp"/>
+                        android:layout_margin="5dp"
+                        />
 
                 </LinearLayout>
 

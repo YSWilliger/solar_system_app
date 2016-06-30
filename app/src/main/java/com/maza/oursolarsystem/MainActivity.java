@@ -1,19 +1,15 @@
 package com.maza.oursolarsystem;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
-import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.Toast;
 import android.widget.ViewFlipper;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -32,6 +28,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        if(getResources().getBoolean(R.bool.landscape_only)){
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        }
 
         mercButton = (ImageButton) findViewById(R.id.mercButton);
         sunButton = (ImageButton) findViewById(R.id.sunButton);
